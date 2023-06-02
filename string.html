@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str,len;
+        str=prompt("Write your name: ");
+        len=str.length;
+        console.log("Length of your name is : "+len);
+        let small=0,capital=0;
+
+        for(let i=0;i<len;i++){
+            if(str[i]>='a' && str[i]<='z'){
+                small++;
+            }
+            else if(str[i]>='A' && str[i]<='Z'){
+                capital++;
+            }
+        }
+        console.log("Small Letter: "+small);
+        console.log("Capital Letter: "+capital);
+    </script>
+</body>
+</html>
